@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SwivlTestTask
-//
-//  Created by Victor on 01.10.2018.
-//  Copyright © 2018 Victor. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
