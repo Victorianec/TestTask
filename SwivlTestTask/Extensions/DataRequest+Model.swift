@@ -51,7 +51,7 @@ extension DataRequest {
             }
             
             // Detect if response is list with pagination
-            guard let objectsList = (jsonResponse.value as? JSON)?[rootKey] as? Array<JSON> else {
+            guard let objectsList = (jsonResponse.value) as? Array<JSON> else {
                 return .failure(NetworkError.parsingError)
             }
             

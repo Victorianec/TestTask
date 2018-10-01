@@ -9,7 +9,7 @@ enum UrlEndpoint: EndpointProtocol {
     var endpoint: String {
         switch self {
             
-        case .users:                    return "/users/"
+        case .users: return "/users"
             
         }
     }
@@ -26,9 +26,10 @@ enum UrlEndpoint: EndpointProtocol {
         switch self {
             
         case .users(let page, let pageSize):
+            let since = page * pageSize
             let params = [
-                "page" : page,
-                "per_page" : pageSize
+                "per_page" : pageSize,
+                "since" : since
             ]
             return params
             

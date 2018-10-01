@@ -27,6 +27,10 @@
 		575645D321621B5400B2A249 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D221621B5400B2A249 /* Dictionary.swift */; };
 		575645D621621EFB00B2A249 /* ShortGithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D521621EFB00B2A249 /* ShortGithubUser.swift */; };
 		575645D8216220DC00B2A249 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D7216220DC00B2A249 /* UsersService.swift */; };
+		575645DB2162229700B2A249 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645DA2162229700B2A249 /* UsersManager.swift */; };
+		575645DD2162326200B2A249 /* GithubUserTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645DC2162326200B2A249 /* GithubUserTableCell.swift */; };
+		575645DF2162415D00B2A249 /* ErrorDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645DE2162415D00B2A249 /* ErrorDisplayable.swift */; };
+		575645E12162463A00B2A249 /* GithubUserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645E02162463A00B2A249 /* GithubUserCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		575645D221621B5400B2A249 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		575645D521621EFB00B2A249 /* ShortGithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortGithubUser.swift; sourceTree = "<group>"; };
 		575645D7216220DC00B2A249 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		575645DA2162229700B2A249 /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
+		575645DC2162326200B2A249 /* GithubUserTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserTableCell.swift; sourceTree = "<group>"; };
+		575645DE2162415D00B2A249 /* ErrorDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDisplayable.swift; sourceTree = "<group>"; };
+		575645E02162463A00B2A249 /* GithubUserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserCollectionCell.swift; sourceTree = "<group>"; };
 		AF77B0B226D88923A3820125 /* Pods-SwivlTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwivlTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwivlTestTask/Pods-SwivlTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +97,7 @@
 		5756459C2161F86500B2A249 /* SwivlTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				575645D92162227100B2A249 /* Managers */,
 				575645D421621EE200B2A249 /* Models */,
 				575645CF21620B4300B2A249 /* Subclasses */,
 				575645BE2162051E00B2A249 /* Extensions */,
@@ -117,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				575645A12161F86500B2A249 /* Main.storyboard */,
+				575645DC2162326200B2A249 /* GithubUserTableCell.swift */,
+				575645E02162463A00B2A249 /* GithubUserCollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,7 +135,6 @@
 		575645B3216200F000B2A249 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				575645B72162026C00B2A249 /* NetworkManager.swift */,
 				575645B92162033000B2A249 /* UrlEndpoint.swift */,
 				575645D7216220DC00B2A249 /* UsersService.swift */,
 			);
@@ -144,6 +154,7 @@
 			children = (
 				575645CD216208BA00B2A249 /* CodableExpandedProtocol.swift */,
 				575645BC2162045D00B2A249 /* EndpointProtocol.swift */,
+				575645DE2162415D00B2A249 /* ErrorDisplayable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -175,6 +186,15 @@
 				575645D521621EFB00B2A249 /* ShortGithubUser.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		575645D92162227100B2A249 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				575645B72162026C00B2A249 /* NetworkManager.swift */,
+				575645DA2162229700B2A249 /* UsersManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		6AE36FFA2BDC90C4DDA8DDDF /* Frameworks */ = {
@@ -309,10 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				575645D8216220DC00B2A249 /* UsersService.swift in Sources */,
+				575645DB2162229700B2A249 /* UsersManager.swift in Sources */,
 				575645BD2162045D00B2A249 /* EndpointProtocol.swift in Sources */,
 				575645B82162026C00B2A249 /* NetworkManager.swift in Sources */,
 				575645C62162079500B2A249 /* JSONDecoder+JSON.swift in Sources */,
 				575645D121620B5000B2A249 /* Error.swift in Sources */,
+				575645DF2162415D00B2A249 /* ErrorDisplayable.swift in Sources */,
 				575645C82162079500B2A249 /* JSONDecoder.swift in Sources */,
 				575645CA2162079500B2A249 /* Data.swift in Sources */,
 				5756459E2161F86500B2A249 /* AppDelegate.swift in Sources */,
@@ -321,8 +343,10 @@
 				575645B62162019800B2A249 /* Constants.swift in Sources */,
 				575645C92162079500B2A249 /* DataRequest+Model.swift in Sources */,
 				575645CE216208BA00B2A249 /* CodableExpandedProtocol.swift in Sources */,
+				575645E12162463A00B2A249 /* GithubUserCollectionCell.swift in Sources */,
 				575645D321621B5400B2A249 /* Dictionary.swift in Sources */,
 				575645BA2162033000B2A249 /* UrlEndpoint.swift in Sources */,
+				575645DD2162326200B2A249 /* GithubUserTableCell.swift in Sources */,
 				575645C72162079500B2A249 /* DataRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

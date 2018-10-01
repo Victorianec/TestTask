@@ -6,6 +6,8 @@ class ShortGithubUser : CodableExpandedProtocol {
     var id: Int!
     var profileLink: String?
     var username: String?
+    
+    var isSelected = false
 
     required init(from decoder: Decoder) throws {
         
@@ -26,7 +28,7 @@ extension ShortGithubUser {
         case avatarUrl = "avatar_url"
         case id
         case profileLink = "html_url"
-        case username
+        case username = "login"
     }
     
 }
