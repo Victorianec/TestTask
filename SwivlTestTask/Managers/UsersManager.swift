@@ -39,4 +39,11 @@ class UsersManager: NSObject {
         }
     }
     
+    func resetSelection() {
+        users = users.map({
+            $0.isSelected = false
+            return $0
+        })
+    }
+    
 }

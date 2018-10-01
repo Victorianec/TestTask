@@ -14,8 +14,15 @@ class SelectUsersVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUIState()
+        setUIState()
         getGithubUsers()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        usersTableView.reloadData()
+        selectedUsersCollectionView.reloadData()
+        setUIState()
     }
     
     //MARK: UI setup
@@ -136,6 +143,16 @@ class SelectUsersVC: UIViewController {
             let error = errors[key] {
             let title = ResponseKeyError(rawValue: key)?.title ?? key
             self.showAlert(title: title, message: error.localizedDescription)
+        }
+    }
+    
+    //MARK: IBActions
+    
+    @IBAction func next(_ sender: AnyObject) {
+        if usersManager.selectedUsers.count > 0 {
+            let composeMessageVC = self.storyboard?.instantiateViewController(withIdentifier: ComposeMessageVC.vcId) as! ComposeMessageVC
+            composeMessageVC.usersManager = usersManager
+            self.navigationController?.pushViewController(composeMessageVC, animated: true)
         }
     }
 }
