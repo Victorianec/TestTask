@@ -3,6 +3,8 @@ import Alamofire
 
 let API_URL = "https://api.github.com"
 
+let requestPageSize = 30
+
 // MARK: - Typealias
 
 typealias JSON = Dictionary<String, Any>

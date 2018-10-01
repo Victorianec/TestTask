@@ -25,6 +25,8 @@
 		575645CE216208BA00B2A249 /* CodableExpandedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645CD216208BA00B2A249 /* CodableExpandedProtocol.swift */; };
 		575645D121620B5000B2A249 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D021620B5000B2A249 /* Error.swift */; };
 		575645D321621B5400B2A249 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D221621B5400B2A249 /* Dictionary.swift */; };
+		575645D621621EFB00B2A249 /* ShortGithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D521621EFB00B2A249 /* ShortGithubUser.swift */; };
+		575645D8216220DC00B2A249 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575645D7216220DC00B2A249 /* UsersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		575645CD216208BA00B2A249 /* CodableExpandedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExpandedProtocol.swift; sourceTree = "<group>"; };
 		575645D021620B5000B2A249 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		575645D221621B5400B2A249 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		575645D521621EFB00B2A249 /* ShortGithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortGithubUser.swift; sourceTree = "<group>"; };
+		575645D7216220DC00B2A249 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		AF77B0B226D88923A3820125 /* Pods-SwivlTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwivlTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwivlTestTask/Pods-SwivlTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 		5756459C2161F86500B2A249 /* SwivlTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				575645D421621EE200B2A249 /* Models */,
 				575645CF21620B4300B2A249 /* Subclasses */,
 				575645BE2162051E00B2A249 /* Extensions */,
 				575645BB2162044200B2A249 /* Protocols */,
@@ -121,6 +126,7 @@
 			children = (
 				575645B72162026C00B2A249 /* NetworkManager.swift */,
 				575645B92162033000B2A249 /* UrlEndpoint.swift */,
+				575645D7216220DC00B2A249 /* UsersService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,6 +167,14 @@
 				575645D021620B5000B2A249 /* Error.swift */,
 			);
 			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		575645D421621EE200B2A249 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				575645D521621EFB00B2A249 /* ShortGithubUser.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6AE36FFA2BDC90C4DDA8DDDF /* Frameworks */ = {
@@ -294,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575645D8216220DC00B2A249 /* UsersService.swift in Sources */,
 				575645BD2162045D00B2A249 /* EndpointProtocol.swift in Sources */,
 				575645B82162026C00B2A249 /* NetworkManager.swift in Sources */,
 				575645C62162079500B2A249 /* JSONDecoder+JSON.swift in Sources */,
@@ -301,6 +316,7 @@
 				575645C82162079500B2A249 /* JSONDecoder.swift in Sources */,
 				575645CA2162079500B2A249 /* Data.swift in Sources */,
 				5756459E2161F86500B2A249 /* AppDelegate.swift in Sources */,
+				575645D621621EFB00B2A249 /* ShortGithubUser.swift in Sources */,
 				575645B22161FDAA00B2A249 /* SelectUsersVC.swift in Sources */,
 				575645B62162019800B2A249 /* Constants.swift in Sources */,
 				575645C92162079500B2A249 /* DataRequest+Model.swift in Sources */,
